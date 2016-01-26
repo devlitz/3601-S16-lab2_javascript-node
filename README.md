@@ -13,7 +13,7 @@ npm install
 ```
 > Protip: npm stands for "Node Package Manager"
 
-#Running Your Project:
+#Running Your Project: 
 Run
 ```
 node app.js
