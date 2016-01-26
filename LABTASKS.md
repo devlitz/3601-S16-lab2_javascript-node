@@ -11,7 +11,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the purpose of app.js? Explain what happens when a user is trying to access a page "kittens", when a user is trying to access the page "petForm", and when the user submits a form on "petForm". Explain what a "route" is.
 
-> app.js is a javascript file that is 
+> app.js is an instance of a node.js server that handles requests from the browser and acts on those requests according to the routes defined. When a user tries to access page "kittens" our server interprets this as the request /kittens and returns the text "Page under construction!" which is directly defined within the app.js file. This is different to a reference to an html file like petForm, which redirects the user to petForm.html. When a user submits text to petForm the submit button triggers javascript code to respond to the input and logs it. A route utilizes methods such as 'get' to reach an endpoint such as a file.
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
