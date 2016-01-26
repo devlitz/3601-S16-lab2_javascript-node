@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>GPA Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="javascript/clientJavascript.js"></script>
+</head>
+<body>
+<a href="/">Home</a>
+    <a href="/about">ABOUT</a>
+    <a href="/kittens">KITTENS</a>
+    <a href="/petForm">Add a new pet!</a>
+<hr>
+    <form method="post" action="/petForm">
+        <input name="newPet" type="text" width="20" placeholder="enter new pet">
+
+        <input type="submit" value="Submit">
+    </form>
+
+<button class="blockCenter" style="margin-top: 10px" type="button" onclick="sendAlert()">Send an alert!</button>
+
+</body>
+</html>
