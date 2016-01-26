@@ -15,7 +15,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+> The "public" folder contains our html files, our assets (pictures in this case), our css files, and our javascript files for the website. Each html file is a different page to the website. The user is directed to each one of these sections through requests to the server: app.get('/ourPage', function(req, res) and the server sending the file back through the res.sendFile('ourPage.html', options).
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
