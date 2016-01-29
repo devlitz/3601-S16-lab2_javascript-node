@@ -33,7 +33,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
 
-Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/serverJavascript.js ``` It is used in only ``` app.js ```  so we can call that function in that file.
+> Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/serverJavascript.js ``` It is used in only ``` app.js ```  so we can call that function in that file.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
@@ -47,11 +47,19 @@ Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ```
 
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
+>The testing file is ``` clientJavascript.spec.js ``` and is located at ``` /3601-S16-lab2_javascript-node/javascript/clientJavascript.spec.js ```
+
 #####After having set up Travis CI with your forked project, play around the page for your project (build history, settings, branches, etc) and describe at least 3 features you think would be useful when troubleshooting a broken project.
+
+> Travic CI shows us what tests are failing for our project (pushed to GitHub). Sends notifications whether or not build is failing. You can have it build pull requests so that it can check requests before mergin.
 
 #####What was the build status of your project right after you got everything set up? Use Travis to find any problems, and describe what failed, if anything. (Which files, what lines, why did failure occur, etc.)
 
+> The build status is failing once we got everything set up. The file that failed is the test in clientJavascript.spec.js:14 that looks for kittens but finds NOT KITTENS!
+
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
+
+> In this case there is already a test that checks that kittens is the answer given. We originally just changed the test so it would pass but eventually we just deleted the failing test (since it was built to fail). You can find the first one [here](https://travis-ci.org/devlitz/3601-S16-lab2_javascript-node/builds/104967173).
 
 - Study jasmine testing syntax. Think of a Javascript function, describe its behavior by writing tests for it (this is test-driven development, or TDD). Add the function, run the tests. (Actually do this. Don't forget to commit your changes!)
 
