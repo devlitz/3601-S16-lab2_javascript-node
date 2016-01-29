@@ -29,7 +29,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
-> Client-side Javascript is defined in the app.js as ``` ./clientJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/javascript/clientJavascript.js ``` It is used in only ``` index.html ``` .
+> Client-side Javascript is defined in the app.js as ``` ./clientJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/javascript/clientJavascript.js ``` It is used in only ``` index.html ``` and ```gpacalc.html``` .
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
 
@@ -37,7 +37,11 @@ Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ```
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
+> The ```package.json``` file contains data that is accessible. Most of what is in there currently is dependencies, which allows different rules to apply to different browsers.
+
 #####What's in .gitgnore file? What's the purpose of it?
+
+> The ``` .gitignore ``` file contains the list of files. This tells git to ignore these files and not check them.
 
 ## Part #2: exploring testing
 
