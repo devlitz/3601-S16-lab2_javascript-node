@@ -4,18 +4,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require("body-parser");
 
-/**
- * Takes input for gpa
- *
- * @returns {int}  - returns yourGPA
- */
 
-function gpaCalc(credit, credit2, credit3, grade, grade2, grade3){
-    var c1 = parseInt(credit);
-    var c2 = parseInt(credit2);
-    var c3 = parseInt(credit3);
-    return ((c1 * grade) + (c2 * grade2) + (c3 * grade3)) / (c1 + c2 + c3);
-}
 
 // Including body-parser. See readme for info.
 app.use(bodyParser.urlencoded({extended: false}));
@@ -69,7 +58,7 @@ app.get('/gpacalc', function(req, res){
 });
 
 app.post('/gpacalc', function(req, res){
-    res.send("Your GPA:" + gpaCalc(req.body.credit, req.body.credit2, req.body.credit3, req.body.grade, req.body.grade2, req.body.grade3));
+    res.send("Your GPA:" + tools.gpaCalc(req.body.credit, req.body.credit2, req.body.credit3, req.body.grade, req.body.grade2, req.body.grade3));
 });
 
 app.get('/', function(req, res){
@@ -78,7 +67,7 @@ app.get('/', function(req, res){
 
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
 app.get('*', function(req, res){
-    res.send("404");
+    res.sendFile("404.html", options);
 //    res.sendFile('404.html', options);
 });
 
