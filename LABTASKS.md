@@ -25,13 +25,15 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
 
-> When you submit a form on ``` petForm ``` 
+> When you submit a form on ``` petForm ``` you submit a string and it returns your string with the string length using the method "post" In this case form submission is handled directly in the ``` app.js ``` file. The parameters are extracted by setting the input as a variable then calling that variable in the javascript. The resulting message is generated in the ```app.js``` file  using the ``` res.send ``` function. This is different because the first time that you access the page you access the ``` get ``` method, when submitting the form it switches to the ``` post ``` method and it calls a different function.
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
-> Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/serverJavascript.js ```
+> Client-side Javascript is defined in the app.js as ``` ./clientJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/javascript/clientJavascript.js ``` It is used in only ``` index.html ``` .
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
+
+Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/serverJavascript.js ``` It is used in only ``` app.js ```  so we can call that function in that file.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
