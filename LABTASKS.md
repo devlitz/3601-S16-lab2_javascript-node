@@ -19,7 +19,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+> We could have just switched the words that the ``` app.js ``` script was sending but instead we decided to get it to send an html file so that development had "progressed." When the browser asked for the link to ``` /kittens ``` the server now uses ``` sendFile``` rather than just ```send``` so the browser recieves that file and loads it as if it was stored locally.
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
 
