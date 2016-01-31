@@ -29,3 +29,6 @@ var returnKittens = function(){
     return "kittens";
 };
 
+var sendInfoAlert = function() {
+    alert("You are now on the GPA calculator page. Made by Zach and Sam.");
+};

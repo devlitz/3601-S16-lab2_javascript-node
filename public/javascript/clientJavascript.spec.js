@@ -11,3 +11,18 @@ describe('testing basic functions', function(){
 
 });
 
+//Our test
+
+describe('testing our Info Alert function', function(){
+    it('should exist', function(){
+        expect(sendInfoAlert()).not.toEqual("rug");
+    });
+
+    it('should not return anything', function(){
+        expect(sendInfoAlert()).not.toBe("kittens");
+    });
+
+});
+
+
+
