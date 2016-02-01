@@ -23,7 +23,7 @@ describe('testing gpaCalc', function(){
     });
 
     it('We should get 2.000 for A, C, F with 2 Credits each', function() {
-        expect(gpaCalc(2, 2, 2, 4, 2, 0).toEqual(0.000));
+        expect(gpaCalc(2, 2, 2, 4, 2, 0).toEqual(2.000));
     });
 
 });
