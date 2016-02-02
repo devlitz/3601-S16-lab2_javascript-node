@@ -9,7 +9,6 @@ describe('testing stringLength', function(){
 
 //Testing for gpaCalc
 
-//Testing our GPA calculator function
 describe('testing gpaCalc', function(){
     it('should return 4.000 for all A', function() {
         expect(gpaCalc(1, 1, 1, 4, 4, 4)).toBe(4.000.toFixed(3));
