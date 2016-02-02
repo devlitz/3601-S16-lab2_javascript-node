@@ -33,7 +33,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
 
-> Client-side Javascript is defined in the app.js as ``` ./serverJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/serverJavascript.js ``` It is used in only ``` app.js ```  so we can call that function in that file.
+> Server-side Javascript is defined in the app.js as ``` ./serverJavascript.js ``` this is located at ``` /3601-S16-lab2_javascript-node/serverJavascript.js ``` It is used in only ``` app.js ```  so we can call that function in that file.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 
